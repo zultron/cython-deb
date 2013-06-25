@@ -1,3 +1,12 @@
+cython (0.19+git51-g3078752-2) unstable; urgency=low
+
+  [ Dmitry Smirnov ]
+  * debian/cython-dbg.postinst
+    - Correctly handle change from directories to symlinks for the doc
+      directory (Closes #691704)
+
+ -- Yaroslav Halchenko <debian@onerussian.com>  Tue, 25 Jun 2013 14:48:11 -0400
+
 cython (0.19+git51-g3078752-1) unstable; urgency=low
 
   [ Yaroslav Halchenko ]
