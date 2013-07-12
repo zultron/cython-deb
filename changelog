@@ -1,3 +1,10 @@
+cython (0.19+git51-g3078752-3) UNRELEASED; urgency=low
+
+  * debian/control:
+    - Fixing typo in description. Thanks Reuben Thomas. (Closes: #716756)
+
+ -- Yaroslav Halchenko <debian@onerussian.com>  Fri, 12 Jul 2013 15:42:36 -0400
+
 cython (0.19+git51-g3078752-2) unstable; urgency=low
 
   [ Dmitry Smirnov ]
