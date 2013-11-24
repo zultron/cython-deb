@@ -1,9 +1,15 @@
+cython (0.19.2+git5-g0c6fdf0-1) unstable; urgency=low
+
+  * Post bugfix-releast upstream snapshot
+
+ -- Yaroslav Halchenko <debian@onerussian.com>  Fri, 22 Nov 2013 16:43:22 -0500
+
 cython (0.19.1+git34-gac3e3a2-1) unstable; urgency=low
 
   * Post bugfix-release upstream snapshot
     - among others addressed some memoryview and datetime namespace
       leakage within CPython namespace introduced in 0.19 release.
-      This might (unlikely lead to FTBFS for build-dependees.
+      This might (unlikely lead to FTBFS for build-dependees).
   * debian/control:
     - Fixing typo in description. Thanks Reuben Thomas. (Closes: #716756)
     - boosted policy to 3.9.4 (no further changes should be due)
