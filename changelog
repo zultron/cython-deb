@@ -1,8 +1,8 @@
-cython (0.20~b1+git19-ga261a91-1) unstable; urgency=low
+cython (0.20-1) unstable; urgency=low
 
-  * Fresh upstream snapshot of the upcoming beta-release
+  * Fresh upstream release
 
- -- Yaroslav Halchenko <debian@onerussian.com>  Sat, 11 Jan 2014 12:49:58 -0500
+ -- Yaroslav Halchenko <debian@onerussian.com>  Sun, 19 Jan 2014 00:07:47 -0500
 
 cython (0.19.2+git5-g0c6fdf0-1) unstable; urgency=low
 
