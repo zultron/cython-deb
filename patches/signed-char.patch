@@ -1,0 +1,15 @@
+Description: fix char signess
+ the tests pass negative values so it must be signed for -funsigned-char arches
+Bug: https://mail.python.org/pipermail/cython-devel/2014-January/003945.html
+--- cython-0.20.orig/tests/run/bytearraymethods.pyx     2014-01-22 01:15:03.664974383 +0000
++++ cython-0.20/tests/run/bytearraymethods.pyx  2014-01-22 01:15:26.305012661 +0000
+@@ -199,7 +199,7 @@
+         return bytearray.decode(s[start:stop], 'utf8')
+ 
+ 
+-def bytearray_append(bytearray b, char c, int i, object o):
++def bytearray_append(bytearray b, signed char c, int i, object o):
+     """
+     >>> b = bytearray(b'abc')
+     >>> b = bytearray_append(b, ord('x'), ord('y'), ord('z'))
+
