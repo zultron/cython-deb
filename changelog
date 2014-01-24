@@ -1,3 +1,9 @@
+cython (0.20-3) unstable; urgency=low
+
+  * fix-skip-tests.patch: prevent python3.4 from running a disabled test
+
+ -- Julian Taylor <jtaylor.debian@googlemail.com>  Fri, 24 Jan 2014 22:37:38 +0100
+
 cython (0.20-2) unstable; urgency=low
 
   * signed-char.patch: Fix broken test when char type is unsigned
