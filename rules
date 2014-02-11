@@ -1,5 +1,6 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
+include /usr/share/dpkg/pkg-info.mk
 
 #  Apparently WGET agent is not favored by upstream's MoinMoin
 WGET_AGENT_STRING="Lynx/2.8.8dev.4 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/2.8.6"
@@ -67,6 +68,13 @@ override_dh_install:
 	dh_link -pcython-dbg usr/share/doc/cython usr/share/doc/cython-dbg
 	rm -rf debian/cython3-dbg/usr/share/doc/cython3-dbg
 	dh_link -pcython3-dbg usr/share/doc/cython3 usr/share/doc/cython3-dbg
+	# add debian version to watermark of generated files
+	set -e; for v in $(PY2VERS); do \
+	  sed -i -e "s/ on / (Debian $(DEB_VERSION)) on /" \
+	  debian/cython/usr/lib/python$$v/dist-packages/Cython/Compiler/Version.py; \
+	done
+	sed -i -e "s/ on / (Debian $(DEB_VERSION)) on /" \
+	  debian/cython3/usr/lib/python3/dist-packages/Cython/Compiler/Version.py
 
 
 override_dh_installdocs:
