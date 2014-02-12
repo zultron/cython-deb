@@ -1,9 +1,10 @@
-cython (0.20-3) UNRELEASED; urgency=low
+cython (0.20-3) unstable; urgency=low
 
+  [ Julian Taylor ]
   * fix-skip-tests.patch: prevent python3.4 from running a disabled test
   * add debian version to watermark in generated source files
 
- -- Julian Taylor <jtaylor.debian@googlemail.com>  Fri, 24 Jan 2014 22:37:38 +0100
+ -- Yaroslav Halchenko <debian@onerussian.com>  Tue, 11 Feb 2014 21:49:34 -0500
 
 cython (0.20-2) unstable; urgency=low
 
