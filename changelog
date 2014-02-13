@@ -1,3 +1,9 @@
+cython (0.20.1-1) unstable; urgency=low
+
+  * Fresh upstream bugfix release
+
+ -- Yaroslav Halchenko <debian@onerussian.com>  Wed, 12 Feb 2014 13:20:05 -0500
+
 cython (0.20-3) unstable; urgency=low
 
   [ Julian Taylor ]
