@@ -1,0 +1,6 @@
+# ignore build artifacts
+/cython-dbg.debhelper.log
+/cython-doc.debhelper.log
+/cython.debhelper.log
+/cython3-dbg.debhelper.log
+/cython3.debhelper.log

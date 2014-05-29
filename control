@@ -1,8 +1,7 @@
 Source: cython
 Section: python
 Priority: optional
-Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
-Uploaders: Ondrej Certik <ondrej@certik.cz>, Yaroslav Halchenko <debian@onerussian.com>
+Maintainer: John Morris <john@zultron.com>
 Build-Depends: debhelper (>= 7.0.50~),
                dpkg-dev (>= 1.16.1~),
                python-all-dev (>= 2.6.6-3~), python-all-dbg,
@@ -14,8 +13,8 @@ Build-Depends: debhelper (>= 7.0.50~),
                python3-numpy
 Standards-Version: 3.9.4
 Homepage: http://cython.org/
-Vcs-Svn: svn://anonscm.debian.org/python-apps/packages/cython/trunk/
-Vcs-Browser: http://anonscm.debian.org/viewvc/python-apps/packages/cython/trunk/
+Vcs-Git: https://github.com/zultron/cython-deb.git
+Vcs-Browser: https://github.com/zultron/cython-deb
 
 Package: cython
 Architecture: any

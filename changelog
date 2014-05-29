@@ -1,3 +1,11 @@
+cython (0.20.1-2) unstable; urgency=low
+
+  * Repackage for Machinekit and wheezy
+  * Patch a unit test failure
+  * Github README
+
+ -- John Morris <john@zultron.com>  Thu, 29 May 2014 10:38:23 -0500
+
 cython (0.20.1-1) unstable; urgency=low
 
   * Fresh upstream bugfix release

@@ -1,0 +1,14 @@
+Debian packaging for cython
+
+Build:
+
+  wget http://cython.org/release/Cython-0.20.1.tar.gz \
+      -O cython_0.20.1.orig.tar.gz
+  tar xzf cython_0.20.1.orig.tar.gz 
+  cd Cython-0.20.1/
+  git clone https://github.com/zultron/cython-deb.git debian
+  debuild -us -uc
+
+Based on packaging from Debian:
+
+  http://anonscm.debian.org/viewvc/python-apps/packages/cython/trunk/debian/

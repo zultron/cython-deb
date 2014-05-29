@@ -1,0 +1,29 @@
+Description: Fix debugger unit tests
+ .
+ Fix unit test failure:
+ .
+ ERROR: test_all (Cython.Debugger.Tests.TestLibCython.TestAll)
+ [...]
+ TypeError: __init__() takes at least 5 non-keyword arguments (4 given)
+ .
+ Described here:
+ https://mail.python.org/pipermail/cython-devel/2014-February/003985.html
+ .
+ Patch here (first hunk already applied):
+ https://github.com/cython/cython/commit/23ebf9cd405acaa75f727bbfd9bd5191718a5daf
+ .
+ cython (0.20.1-2) unstable; urgency=low
+ .
+   * Repackage for Machinekit and wheezy
+Author: John Morris <john@zultron.com>
+
+--- cython-0.20.1.orig/Cython/Debugger/Tests/TestLibCython.py
++++ cython-0.20.1/Cython/Debugger/Tests/TestLibCython.py
+@@ -123,6 +123,7 @@ class DebuggerTestCase(unittest.TestCase
+                 workdir=self.tempdir,
+                 # we clean up everything (not only compiled files)
+                 cleanup_workdir=False,
++                tags=runtests.parse_tags(codefile),
+                 **opts
+             )
+ 
