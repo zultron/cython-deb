@@ -17,7 +17,7 @@ export HOME=$(CURDIR)/build
 export MPLCONFIGDIR=$(CURDIR)/build
 
 %:
-	dh $@ --with python2,python3 --buildsystem python_distutils
+	dh $@ --with python2,python3 --buildsystem python_distutils --parallel
 
 override_dh_auto_build:
 	dh_auto_build
